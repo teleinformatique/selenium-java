@@ -30,6 +30,5 @@ public class ContextMenuPage {
 
     public void acceptAlert(){
         driver.switchTo().alert().accept();
-        driver.switchTo().alert().
     }
 }
