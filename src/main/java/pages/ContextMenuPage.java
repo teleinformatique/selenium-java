@@ -15,17 +15,7 @@ public class ContextMenuPage {
     }
 
     public void moveToContextMenuZone(){
-       // action.moveToElement(driver.findElement(contextMenuZone)).perform();
         action.contextClick(driver.findElement(contextMenuZone)).perform();
-    }
-
-    public void rightClick(){
-        action.contextClick();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     public void acceptAlert(){

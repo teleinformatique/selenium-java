@@ -10,7 +10,6 @@ public class ContextMenuTests extends BaseTests {
     public void testContextMenu(){
         ContextMenuPage contextMenuPage = homePage.clickContextMenuLink();
         contextMenuPage.moveToContextMenuZone();
-        contextMenuPage.rightClick();
         contextMenuPage.acceptAlert();
     }
 }
