@@ -1,0 +1,10 @@
+dropdown/DropdownTests.class
+forgetpassword/ForgetPasswordTest.class
+frames/FrameTest.class
+contextmenu/ContextMenuTests.class
+hover/HoverTests.class
+alerts/FileUploadTests.class
+keys/KeysTests.class
+base/BaseTests.class
+alerts/AlertTests.class
+login/LoginTests.class

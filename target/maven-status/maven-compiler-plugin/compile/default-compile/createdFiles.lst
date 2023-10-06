@@ -1,0 +1,13 @@
+pages/ContextMenuPage.class
+pages/HomePage.class
+pages/DropDownPage.class
+pages/SecureAreaPage.class
+pages/EmailSendPage.class
+pages/AlertPage.class
+pages/FileUploadPage.class
+pages/KeyPressPage.class
+pages/LoginPage.class
+pages/HoversPage.class
+pages/WysiwygEditorPage.class
+pages/ForgetPasswordPage.class
+pages/HoversPage$FigureCaption.class

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">3</td><td class="num">121.236</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">dropdown.DropdownTests</td><td><a href="#m0">testSelectOption</a></td><td rowspan="1">1696607039269</td><td rowspan="1">212</td></tr><tr class="failedodd"><td rowspan="1">forgetpassword.ForgetPasswordTest</td><td><a href="#m1">testForgetPassword</a></td><td rowspan="1">1696607045320</td><td rowspan="1">639</td></tr><tr class="failedeven"><td rowspan="1">frames.FrameTest</td><td><a href="#m2">testWysiwyg</a></td><td rowspan="1">1696607051799</td><td rowspan="1">1340</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">alerts.AlertTests</td><td><a href="#m3">testAcceptAlert</a></td><td rowspan="1">1696607149100</td><td rowspan="1">295</td></tr><tr class="passedeven"><td><a href="#m4">testGetTextFromAlert</a></td><td rowspan="1">1696607149566</td><td rowspan="1">243</td></tr><tr class="passedeven"><td><a href="#m5">testSetInputInAlert</a></td><td rowspan="1">1696607149997</td><td rowspan="1">254</td></tr><tr class="passedodd"><td rowspan="1">alerts.FileUploadTests</td><td><a href="#m6">testUploadFile</a></td><td rowspan="1">1696607055782</td><td rowspan="1">79928</td></tr><tr class="passedeven"><td rowspan="1">contextmenu.ContextMenuTests</td><td><a href="#m7">testContextMenu</a></td><td rowspan="1">1696607048651</td><td rowspan="1">353</td></tr><tr class="passedodd"><td rowspan="1">hover.HoverTests</td><td><a href="#m8">TestHoverUser1</a></td><td rowspan="1">1696607042133</td><td rowspan="1">572</td></tr><tr class="passedeven"><td rowspan="1">keys.KeysTests</td><td><a href="#m9">TestBackspace</a></td><td rowspan="1">1696607152891</td><td rowspan="1">318</td></tr><tr class="passedodd"><td rowspan="1">login.LoginTests</td><td><a href="#m10">testSuccessFulLogin</a></td><td rowspan="1">1696607155663</td><td rowspan="1">911</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">dropdown.DropdownTests#testSelectOption</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: &apos;java.lang.String org.openqa.selenium.WebElement.getDomAttribute(java.lang.String)&apos;
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:51)
+	at pages.DropDownPage.findDropDownElement(DropDownPage.java:30)
+	at pages.DropDownPage.selectFromDropdown(DropDownPage.java:20)
+	at dropdown.DropdownTests.testSelectOption(DropdownTests.java:15)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">forgetpassword.ForgetPasswordTest#testForgetPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#content&quot;}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MBP14deKhadim&apos;, ip: &apos;fd90:17c8:2091:b100:35:5d5e:875c:46b1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/77/fwgm1f7j1l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 44f1c21e245ebc2041aa637a7aca7252
+*** Element info: {Using=id, value=content}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.EmailSendPage.getConfirmText(EmailSendPage.java:15)
+	at forgetpassword.ForgetPasswordTest.testForgetPassword(ForgetPasswordTest.java:16)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">frames.FrameTest#testWysiwyg</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Text from editor incorrect expected [Helloworld] but found [HelloworldYour content goes here.]
+	at frames.FrameTest.testWysiwyg(FrameTest.java:22)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">alerts.AlertTests#testAcceptAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">alerts.AlertTests#testGetTextFromAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">alerts.AlertTests#testSetInputInAlert</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">alerts.FileUploadTests#testUploadFile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">contextmenu.ContextMenuTests#testContextMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">hover.HoverTests#TestHoverUser1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">keys.KeysTests#TestBackspace</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">login.LoginTests#testSuccessFulLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

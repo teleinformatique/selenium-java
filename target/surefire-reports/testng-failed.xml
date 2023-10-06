@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="forgetpassword.ForgetPasswordTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="goHome"/>
+          <include name="setUp"/>
+          <include name="testForgetPassword"/>
+        </methods>
+      </class> <!-- forgetpassword.ForgetPasswordTest -->
+      <class name="dropdown.DropdownTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="goHome"/>
+          <include name="setUp"/>
+          <include name="testSelectOption"/>
+        </methods>
+      </class> <!-- dropdown.DropdownTests -->
+      <class name="frames.FrameTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="goHome"/>
+          <include name="testWysiwyg"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- frames.FrameTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

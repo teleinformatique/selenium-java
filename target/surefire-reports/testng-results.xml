@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-06T15:43:55Z" name="Surefire suite" finished-at="2023-10-06T15:45:56Z" duration-ms="121236">
+    <groups>
+    </groups>
+    <test started-at="2023-10-06T15:43:55Z" name="Surefire test" finished-at="2023-10-06T15:45:56Z" duration-ms="121236">
+      <class name="forgetpassword.ForgetPasswordTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:forgetpassword.ForgetPasswordTest@149494d8]" started-at="2023-10-06T15:44:02Z" name="setUp" finished-at="2023-10-06T15:44:05Z" duration-ms="2355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:forgetpassword.ForgetPasswordTest@149494d8]" started-at="2023-10-06T15:44:05Z" name="goHome" finished-at="2023-10-06T15:44:05Z" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testForgetPassword()[pri:0, instance:forgetpassword.ForgetPasswordTest@149494d8]" started-at="2023-10-06T15:44:05Z" name="testForgetPassword" finished-at="2023-10-06T15:44:05Z" duration-ms="639" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#content"}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MBP14deKhadim', ip: 'fd90:17c8:2091:b100:35:5d5e:875c:46b1%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/77/fwgm1f7j1l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 44f1c21e245ebc2041aa637a7aca7252
+*** Element info: {Using=id, value=content}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#content"}
+  (Session info: chrome=117.0.5938.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MBP14deKhadim', ip: 'fd90:17c8:2091:b100:35:5d5e:875c:46b1%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/77/fwgm1f7j1l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 44f1c21e245ebc2041aa637a7aca7252
+*** Element info: {Using=id, value=content}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pages.EmailSendPage.getConfirmText(EmailSendPage.java:15)
+at forgetpassword.ForgetPasswordTest.testForgetPassword(ForgetPasswordTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgetPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:forgetpassword.ForgetPasswordTest@149494d8]" started-at="2023-10-06T15:44:05Z" name="tearDown" finished-at="2023-10-06T15:44:06Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- forgetpassword.ForgetPasswordTest -->
+      <class name="base.BaseTests">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:base.BaseTests@5c072e3f]" started-at="2023-10-06T15:43:55Z" name="setupClass" finished-at="2023-10-06T15:43:55Z" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+      </class> <!-- base.BaseTests -->
+      <class name="dropdown.DropdownTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:dropdown.DropdownTests@4d1b0d2a]" started-at="2023-10-06T15:43:55Z" name="setUp" finished-at="2023-10-06T15:43:59Z" duration-ms="3661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:dropdown.DropdownTests@4d1b0d2a]" started-at="2023-10-06T15:43:59Z" name="goHome" finished-at="2023-10-06T15:43:59Z" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testSelectOption()[pri:0, instance:dropdown.DropdownTests@4d1b0d2a]" started-at="2023-10-06T15:43:59Z" name="testSelectOption" finished-at="2023-10-06T15:43:59Z" duration-ms="212" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.lang.String org.openqa.selenium.WebElement.getDomAttribute(java.lang.String)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.openqa.selenium.WebElement.getDomAttribute(java.lang.String)'
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:51)
+at pages.DropDownPage.findDropDownElement(DropDownPage.java:30)
+at pages.DropDownPage.selectFromDropdown(DropDownPage.java:20)
+at dropdown.DropdownTests.testSelectOption(DropdownTests.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectOption -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dropdown.DropdownTests@4d1b0d2a]" started-at="2023-10-06T15:43:59Z" name="tearDown" finished-at="2023-10-06T15:43:59Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dropdown.DropdownTests -->
+      <class name="login.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@545997b1]" started-at="2023-10-06T15:45:53Z" name="setUp" finished-at="2023-10-06T15:45:55Z" duration-ms="2189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:login.LoginTests@545997b1]" started-at="2023-10-06T15:45:55Z" name="goHome" finished-at="2023-10-06T15:45:55Z" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testSuccessFulLogin()[pri:0, instance:login.LoginTests@545997b1]" started-at="2023-10-06T15:45:55Z" name="testSuccessFulLogin" finished-at="2023-10-06T15:45:56Z" duration-ms="911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessFulLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@545997b1]" started-at="2023-10-06T15:45:56Z" name="tearDown" finished-at="2023-10-06T15:45:56Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- login.LoginTests -->
+      <class name="contextmenu.ContextMenuTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:contextmenu.ContextMenuTests@710726a3]" started-at="2023-10-06T15:44:06Z" name="setUp" finished-at="2023-10-06T15:44:08Z" duration-ms="2435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:contextmenu.ContextMenuTests@710726a3]" started-at="2023-10-06T15:44:08Z" name="goHome" finished-at="2023-10-06T15:44:08Z" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testContextMenu()[pri:0, instance:contextmenu.ContextMenuTests@710726a3]" started-at="2023-10-06T15:44:08Z" name="testContextMenu" finished-at="2023-10-06T15:44:09Z" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContextMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:contextmenu.ContextMenuTests@710726a3]" started-at="2023-10-06T15:44:09Z" name="tearDown" finished-at="2023-10-06T15:44:09Z" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- contextmenu.ContextMenuTests -->
+      <class name="hover.HoverTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hover.HoverTests@954b04f]" started-at="2023-10-06T15:43:59Z" name="setUp" finished-at="2023-10-06T15:44:01Z" duration-ms="2357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:hover.HoverTests@954b04f]" started-at="2023-10-06T15:44:01Z" name="goHome" finished-at="2023-10-06T15:44:02Z" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="TestHoverUser1()[pri:0, instance:hover.HoverTests@954b04f]" started-at="2023-10-06T15:44:02Z" name="TestHoverUser1" finished-at="2023-10-06T15:44:02Z" duration-ms="572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHoverUser1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hover.HoverTests@954b04f]" started-at="2023-10-06T15:44:02Z" name="tearDown" finished-at="2023-10-06T15:44:02Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hover.HoverTests -->
+      <class name="frames.FrameTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:frames.FrameTest@646007f4]" started-at="2023-10-06T15:44:09Z" name="setUp" finished-at="2023-10-06T15:44:11Z" duration-ms="2525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:frames.FrameTest@646007f4]" started-at="2023-10-06T15:44:11Z" name="goHome" finished-at="2023-10-06T15:44:11Z" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testWysiwyg()[pri:0, instance:frames.FrameTest@646007f4]" started-at="2023-10-06T15:44:11Z" name="testWysiwyg" finished-at="2023-10-06T15:44:13Z" duration-ms="1340" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Text from editor incorrect expected [Helloworld] but found [HelloworldYour content goes here.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Text from editor incorrect expected [Helloworld] but found [HelloworldYour content goes here.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at frames.FrameTest.testWysiwyg(FrameTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWysiwyg -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:frames.FrameTest@646007f4]" started-at="2023-10-06T15:44:13Z" name="tearDown" finished-at="2023-10-06T15:44:13Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- frames.FrameTest -->
+      <class name="alerts.FileUploadTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:alerts.FileUploadTests@481a15ff]" started-at="2023-10-06T15:44:13Z" name="setUp" finished-at="2023-10-06T15:44:15Z" duration-ms="2365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:alerts.FileUploadTests@481a15ff]" started-at="2023-10-06T15:44:15Z" name="goHome" finished-at="2023-10-06T15:44:15Z" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testUploadFile()[pri:0, instance:alerts.FileUploadTests@481a15ff]" started-at="2023-10-06T15:44:15Z" name="testUploadFile" finished-at="2023-10-06T15:45:35Z" duration-ms="79928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:alerts.FileUploadTests@481a15ff]" started-at="2023-10-06T15:45:35Z" name="tearDown" finished-at="2023-10-06T15:45:35Z" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- alerts.FileUploadTests -->
+      <class name="alerts.AlertTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:alerts.AlertTests@78186a70]" started-at="2023-10-06T15:45:35Z" name="setUp" finished-at="2023-10-06T15:45:47Z" duration-ms="12150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:alerts.AlertTests@78186a70]" started-at="2023-10-06T15:45:47Z" name="goHome" finished-at="2023-10-06T15:45:49Z" duration-ms="1148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testAcceptAlert()[pri:0, instance:alerts.AlertTests@78186a70]" started-at="2023-10-06T15:45:49Z" name="testAcceptAlert" finished-at="2023-10-06T15:45:49Z" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAcceptAlert -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:alerts.AlertTests@78186a70]" started-at="2023-10-06T15:45:49Z" name="goHome" finished-at="2023-10-06T15:45:49Z" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testGetTextFromAlert()[pri:0, instance:alerts.AlertTests@78186a70]" started-at="2023-10-06T15:45:49Z" name="testGetTextFromAlert" finished-at="2023-10-06T15:45:49Z" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTextFromAlert -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:alerts.AlertTests@78186a70]" started-at="2023-10-06T15:45:49Z" name="goHome" finished-at="2023-10-06T15:45:49Z" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testSetInputInAlert()[pri:0, instance:alerts.AlertTests@78186a70]" started-at="2023-10-06T15:45:49Z" name="testSetInputInAlert" finished-at="2023-10-06T15:45:50Z" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetInputInAlert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:alerts.AlertTests@78186a70]" started-at="2023-10-06T15:45:50Z" name="tearDown" finished-at="2023-10-06T15:45:50Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- alerts.AlertTests -->
+      <class name="keys.KeysTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:keys.KeysTests@306279ee]" started-at="2023-10-06T15:45:50Z" name="setUp" finished-at="2023-10-06T15:45:52Z" duration-ms="2382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:keys.KeysTests@306279ee]" started-at="2023-10-06T15:45:52Z" name="goHome" finished-at="2023-10-06T15:45:52Z" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="TestBackspace()[pri:0, instance:keys.KeysTests@306279ee]" started-at="2023-10-06T15:45:52Z" name="TestBackspace" finished-at="2023-10-06T15:45:53Z" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBackspace -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:keys.KeysTests@306279ee]" started-at="2023-10-06T15:45:53Z" name="tearDown" finished-at="2023-10-06T15:45:53Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- keys.KeysTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

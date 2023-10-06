@@ -8,9 +8,9 @@ import static org.testng.Assert.assertEquals;
 public class FileUploadTests extends BaseTests {
 
     @Test
-    public void testUploadFile(){
+    public void testUploadFile() {
         FileUploadPage fileUploadPage = homePage.clickFileUploadLink();
-        fileUploadPage.uploadFile("/Users/khadim/Projects/testautomationu/resources/chromedriver");
+        fileUploadPage.uploadFile("/Users/mac/Projects/selenium-java/resources/chromedriver");
 
         assertEquals(fileUploadPage.getUploadedFile(), "chromedriver", "Uploaded file incorrec");
     }

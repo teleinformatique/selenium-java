@@ -7,29 +7,34 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.HomePage;
 
 public class BaseTests {
     private WebDriver driver;
     protected HomePage homePage;
 
+    @BeforeSuite
+    static void setupClass() {
+        WebDriverManager.chromedriver().setup();
+    }
+
     @BeforeClass
-    public void setUp(){
-        System.setProperty("webdriver.chrome.driver","resources/chromedriver");
+    public void setUp() {
         driver = new ChromeDriver();
         goHome();
     }
 
     @AfterClass
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
 
     @BeforeMethod
-    public void goHome(){
+    public void goHome() {
         driver.get("https://the-internet.herokuapp.com");
         homePage = new HomePage(driver);
     }
 }
-
-
